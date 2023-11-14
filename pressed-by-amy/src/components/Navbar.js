@@ -36,10 +36,12 @@ export default function NavHeader(){
             </NavDropdown>
           </Nav>
         </Navbar.Collapse>
-        <Navbar.Brand className="pressed" href="#home">PRESSED</Navbar.Brand>
-     <p>{userIcon}</p>
-     <p>{heartIcon}</p>
-     <p>{cartIcon}</p>
+        <Navbar className="pressed" href="#home">Pressed</Navbar>
+     <div className="icons">
+     <p id="user">{userIcon}</p>
+     <p id="favorites">{heartIcon}</p>
+     <p id="carts">{cartIcon}</p>
+     </div>
       </Container>
     </Navbar>
             </Container>

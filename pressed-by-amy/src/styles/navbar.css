@@ -1,5 +1,10 @@
 .pressed {
-    font-family: 'Glass Antiqua', cursive;
+    font-family: 'Qwigley', cursive;
+    font-size: 10vh;
+    color: var(--peach);
+    /* margin-right: 5vh;;
+    margin-left: 40px; */
+    letter-spacing: 3px;
 }
 
 
@@ -7,3 +12,14 @@
 background-color: var(--dark-green);
 }
 
+.icons {
+    margin-left: 5vh;
+}
+
+/* #user {
+    margin-right: 3vh;
+}
+
+#favorites{
+    margin-right: 3vh;
+} */ 
