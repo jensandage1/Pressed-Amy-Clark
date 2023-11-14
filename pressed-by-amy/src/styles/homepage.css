@@ -1,0 +1,14 @@
+.carousel {
+    display: flex;
+    justify-content: center;
+    width: 80vh;
+    height: 80vh;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+img {
+    width: 80vh;
+    height: 80vh;
+}
