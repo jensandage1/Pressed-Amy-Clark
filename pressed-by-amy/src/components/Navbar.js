@@ -31,7 +31,7 @@ export default function NavHeader(){
               </NavDropdown.Item>
               <NavDropdown.Divider />
               <NavDropdown.Item href="#action/3.4">
-                Separated link
+                How-to Guide
               </NavDropdown.Item>
             </NavDropdown>
           </Nav>

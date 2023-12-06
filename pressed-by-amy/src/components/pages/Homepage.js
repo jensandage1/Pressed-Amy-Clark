@@ -1,8 +1,10 @@
 import { Carousel } from 'react-bootstrap';
+import Featured from '../Featured';
 import "../../styles/homepage.css";
 import breakfastAtTiffanys from "../../assets/breakfast-at-tiffanys.jpg";
 import cafeAuLait from "../../assets/cafe-au-lait.jpg";
 import funkyRainbow from "../../assets/funky-rainbow.jpg";
+
 
 const tiffany = {
   title: 'Breakfast at Tiffanys',
@@ -20,43 +22,47 @@ const rainbow = {
 };
 
 
+
+
 export default function Homepage(){
     return (
         <div>
              <Carousel className="carousel">
       <Carousel.Item>
-        <img
+        <img className="img-scroll"
         src= {tiffany.image}
         alt="Breakfast at Tiffany's nails"
         />
         <Carousel.Caption>
-          <h3>{tiffany.title}</h3>
-          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+          <h3 className="scroll-font">{tiffany.title}</h3>
+          <p className="scroll-font">Get custom sets made!</p>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
-      <img
+      <img className="img-scroll"
         src= {cafe.image}
         alt="coffee themed nails"
         />
         <Carousel.Caption>
-          <h3>{cafe.title}</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <h3 className="scroll-font">{cafe.title}</h3>
+          <p className="scroll-font">Want different lengths?</p>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
-      <img
+      <img className="img-scroll"
         src= {rainbow.image}
         alt="Funky Rainbow nails"
         />
         <Carousel.Caption>
-          <h3>{rainbow.title}</h3>
-          <p>
-            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-          </p>
+          <h3 className="scroll-font">{rainbow.title}</h3>
+          <p className="scroll-font">Want a design in a different color?</p>
         </Carousel.Caption>
       </Carousel.Item>
     </Carousel>
+    <div>
+      <p className="section-headline">Featured Sets</p>
+      <Featured />
+    </div>
         </div>
     );
 }
